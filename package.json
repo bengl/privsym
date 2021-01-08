@@ -1,0 +1,34 @@
+{
+  "name": "privsym",
+  "version": "1.0.0",
+  "description": "create private symbols",
+  "main": "index.js",
+  "scripts": {
+    "lint": "semistandard",
+    "test-normal": "node test",
+    "test-flagged": "node --allow-natives-syntax test flag",
+    "test": "npm run lint && npm run test-normal && npm run test-flagged"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bengl/privsym.git"
+  },
+  "keywords": [
+    "private",
+    "symbol",
+    "private-symbol"
+  ],
+  "author": "Bryan English <bryan@bryanenglish.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bengl/privsym/issues"
+  },
+  "homepage": "https://github.com/bengl/privsym#readme",
+  "devDependencies": {
+    "pitesti": "^3.0.0",
+    "semistandard": "^16.0.0"
+  }
+}
